@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PerformanceCell" id="dXQ-JS-g8M" userLabel="本月业绩cell">
+            <rect key="frame" x="0.0" y="0.0" width="137" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="137" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="本月业绩" translatesAutoresizingMaskIntoConstraints="NO" id="3sh-rX-guW">
+                        <rect key="frame" x="0.0" y="0.0" width="137" height="77"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vd9-D4-gUR">
+                        <rect key="frame" x="117" y="54" width="15" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本月业绩（元）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wv-dc-DzP">
+                        <rect key="frame" x="5" y="5" width="91" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcZ-Tc-P8J">
+                        <rect key="frame" x="97" y="41" width="20" height="36"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上月业绩：4，888万元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UW-e9-xML">
+                        <rect key="frame" x="5" y="62" width="86" height="10"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3sh-rX-guW" secondAttribute="bottom" id="4sn-HD-Rzh"/>
+                <constraint firstItem="0UW-e9-xML" firstAttribute="leading" secondItem="dXQ-JS-g8M" secondAttribute="leading" constant="5" id="8eH-Ff-lFo"/>
+                <constraint firstAttribute="trailing" secondItem="Vd9-D4-gUR" secondAttribute="trailing" constant="5" id="8po-XZ-SBp"/>
+                <constraint firstAttribute="trailing" secondItem="3sh-rX-guW" secondAttribute="trailing" id="AqA-Bm-qGz"/>
+                <constraint firstAttribute="bottom" secondItem="0UW-e9-xML" secondAttribute="bottom" constant="5" id="Fnu-qk-w05"/>
+                <constraint firstItem="5wv-dc-DzP" firstAttribute="top" secondItem="dXQ-JS-g8M" secondAttribute="top" constant="5" id="Jml-HS-nAB"/>
+                <constraint firstItem="Vd9-D4-gUR" firstAttribute="leading" secondItem="qcZ-Tc-P8J" secondAttribute="trailing" id="M83-aG-vED"/>
+                <constraint firstAttribute="bottom" secondItem="qcZ-Tc-P8J" secondAttribute="bottom" id="Ohx-1d-NA4"/>
+                <constraint firstItem="3sh-rX-guW" firstAttribute="top" secondItem="dXQ-JS-g8M" secondAttribute="top" id="i44-Bn-0SM"/>
+                <constraint firstItem="3sh-rX-guW" firstAttribute="leading" secondItem="dXQ-JS-g8M" secondAttribute="leading" id="lUi-QC-ZKK"/>
+                <constraint firstAttribute="bottom" secondItem="Vd9-D4-gUR" secondAttribute="bottom" constant="5" id="s2i-sY-Q62"/>
+                <constraint firstItem="5wv-dc-DzP" firstAttribute="leading" secondItem="dXQ-JS-g8M" secondAttribute="leading" constant="5" id="u86-7S-FJ3"/>
+            </constraints>
+            <point key="canvasLocation" x="569.5" y="170.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="本月业绩" width="137" height="82"/>
+    </resources>
+</document>
